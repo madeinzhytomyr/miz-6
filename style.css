@@ -689,7 +689,7 @@ h6 {
 .page-title {
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 20px 0;
+    padding: 27px 0;
     position: relative;
 }
 
@@ -2372,6 +2372,11 @@ section,
     border-radius: 4px;
     margin-bottom: 8px;
     letter-spacing: 0.5px;
+
+    background-color: var(--bs-primary);
+    color: white;
+    font-weight: bold;
+
 }
 
 .portfolio
@@ -3782,14 +3787,61 @@ section,
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    aspect-ratio: 3 / 2; /* фіксоване співвідношення блоку */
+    /* aspect-ratio: 1 / 1;  */
     background: transparent; /* або #fff, або rgba(255,255,255,0.3) */
+
+    height: auto !important;
+    max-height: 600px !important;
+
+    background: #141414 !important; /* фон усієї площі слайду */
+
+
   }
   
   .swiper-slide img {
     height: 100% !important;
     width: 100%;
     object-fit: contain; /* тепер фото не обрізається */
-    background: #141414; /* фон у фото */
+    background: #141414 ; /* фон у фото */
     border-radius: 12px;
+    border: 2px solid #141414;
+    object-fit: contain;
+
+    /* border: 3px solid var(--bs-primary); */
+    width: auto !important;
+
+    background: transparent !important; /* фон прозорий */
+
+
   }
+
+
+
+
+  .custom-swiper-btn {
+    width: 45px;
+    height: 45px;
+    background: var(--bs-primary);
+    border-radius: 50%;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.2s;
+
+    /* background: transparent; */
+
+  }
+  
+  .custom-swiper-btn:hover {
+    background: var(--bs-primary);
+    transform: scale(1.12);
+  }
+  
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 21px; /* розмір стрілок */
+    font-weight: bold;
+  }
+  
