@@ -3838,6 +3838,11 @@ section,
     background: var(--bs-primary);
     transform: scale(1.12);
   }
+
+  .custom-swiper-btn:active {
+    background: var(--bs-primary);
+    transform: scale(1);
+  }
   
   .swiper-button-prev::after,
   .swiper-button-next::after {
