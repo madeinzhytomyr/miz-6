@@ -240,15 +240,15 @@ document.addEventListener("DOMContentLoaded", function () {
         }" class="img-fluid" loading="lazy">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
-                            <span class="project-category">${
+                            <span  class="project-category">${
                                 product.category
                             }</span>
-                            <h4>${product.name}</h4>
+                            <h4 style="text-shadow: 2px 2px 5px black">${product.name}</h4>
                         </div>
-                        <div class="portfolio-actions">
+                        <div class="portfolio-actions ">
                             <a href="${
                                 product.linkDetails
-                            }" class="portfolio-details " ><i class="bi bi-arrow-right
+                            }" class="portfolio-details bg-primary text-white fw-bold" ><i class="bi bi-arrow-right
                             "></i></a>
                         </div>
                     </div>
@@ -494,6 +494,11 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 
 
 
+
+
+
+
+  
 
 
 
