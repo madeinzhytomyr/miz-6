@@ -134,7 +134,7 @@
                     "clickable": true
                   }
                 }
-              </script>
+                </script>
   
               <div class="swiper-wrapper">
 
@@ -187,6 +187,12 @@
                 </div>
 
               </div>
+
+                   <!-- кнопки -->
+                   <div class="swiper-button-prev custom-swiper-btn pe-1 "></div>
+                   <div class="swiper-button-next custom-swiper-btn ps-1 "></div>
+     
+     
   
               <div class="swiper-pagination"></div>
             </div>
@@ -268,7 +274,7 @@
                 </div>
                 <div class="info-item">
                   <span class="label">Дата Проведення</span>
-                  <span class="value">2025</span>
+                  <span class="value">18 жовтня 2025</span>
                 </div>
                 <div class="info-item">
                   <span class="label">Учасники</span>
@@ -293,15 +299,20 @@
               </div>
   
               <div class="tags-card" data-aos="fade-up" data-aos-delay="400">
-                <h3>Теги</h3>
+                <h3>Проєкт у цифрах</h3>
                 <div class="tags">
-                  <a href="#">Діти</a>
+                  <a href="#">5+ Учасників</a>
+                  <a href="#">2 Години Активностей</a>
+                  <a href="#">4 Навички</a>
+                  <a href="#">Командна Робота</a>
+                  <a href="#">Інтерактив</a>
+                  <a href="#">Ігрове Навчання</a>
+                  <a href="#">Тепла Атмосфера</a>
+                  <a href="#">Творчість</a>
+                  <a href="#">Спільність</a>
                   <a href="#">Розвиток</a>
-                  <a href="#">Освіта</a>
-                  <a href="#">Дошкільнята</a>
-                  <a href="#">Житомир</a>
-                  <a href="#">Made in ZT</a>
-                  <a href="#">Звіт</a>
+                </div>
+                
                 </div>
               </div>
   
@@ -404,11 +415,24 @@
   <script src="/index.js"></script>
 
   <script>
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
+    //фото кнопки і переходи
     document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll('.portfolio-details-slider').forEach(function (slider) {
         let config = {};
         let configEl = slider.querySelector('.swiper-config');
-
+    
         if (configEl) {
           try {
             config = JSON.parse(configEl.textContent.trim());
@@ -416,10 +440,18 @@
             console.error("Invalid swiper JSON config");
           }
         }
-
+    
+        // ДОДАЄМО НАВІГАЦІЮ
+        config.navigation = {
+          nextEl: slider.querySelector(".swiper-button-next"),
+          prevEl: slider.querySelector(".swiper-button-prev")
+        };
+    
+        // Запускаємо Swiper
         new Swiper(slider, config);
       });
     });
+    
   </script>
 
 
